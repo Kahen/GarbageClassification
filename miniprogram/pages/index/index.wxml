@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="main">
+	<view class="title">
+		<text class="web-font1">垃圾分类</text>
+		<text class="web-font2">大全</text>
+	</view>
+
+</view>

@@ -1,0 +1,5 @@
+<view class="search_input">
+	<navigator class="seach_navigator" url="/pages/search/index" open-type="navigate">
+		<image class="seachlogo" src="../../images/search.png"></image>请输入正确物品名称
+	</navigator>
+</view>

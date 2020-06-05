@@ -1,0 +1,71 @@
+.main {
+  padding: 10rpx;
+}
+
+.main_header {
+  width: 100%;
+  background-color: #215287;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  margin: 10rpx;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: white;
+}
+
+.logo {
+  width: 30%;
+}
+
+.inner image {
+  width: 100%;
+}
+
+.inner text {
+  width: 70%;
+  height: 200rpx;
+  padding: 80rpx 30rpx 0rpx 0rpx;
+  color: white;
+}
+
+.index_cate {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40rpx 40rpx 0rpx 40rpx;
+}
+
+.index_cate navigator {
+  width: 25%;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.index_cate navigator image {
+  width: 90%;
+}
+
+.index_cate navigator text {
+  font-size: small;
+  color: #656565;
+}
+
+.title {
+  padding: 30rpx 0rpx 30rpx 20rpx;
+  font-size: large;
+  font-weight: bolder;
+}
+.end{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.redirect{
+  padding-top: 30rpx;
+}

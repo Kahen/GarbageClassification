@@ -1,7 +1,6 @@
-const db = wx.cloud.database()
+// pages/reduce/index.js
+const db=wx.cloud.database()
 Page({
-
-
 
   /**
    * 页面的初始数据
@@ -13,13 +12,17 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  async onLoad() {
+  onLoad: function (options) {
     let that = this
-    db.collection("IndexList").get({
+    db.collection("Recycle").get({
       success: function (res) {
         console.log("success", res)
         that.setData({
-          IndexList: res.data,
+          result: res.data[0],
+        })
+        //动态显示标题
+        wx.setNavigationBarTitle({
+          title: res.data[0].name
         })
       },
       fail: function (res) {
@@ -38,7 +41,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  async onShow() {
+  onShow: function () {
 
   },
 
@@ -67,6 +70,13 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
 
   }
 })

@@ -1,7 +1,5 @@
-const db = wx.cloud.database()
+// pages/formula/index.js
 Page({
-
-
 
   /**
    * 页面的初始数据
@@ -13,19 +11,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  async onLoad() {
-    let that = this
-    db.collection("IndexList").get({
-      success: function (res) {
-        console.log("success", res)
-        that.setData({
-          IndexList: res.data,
-        })
-      },
-      fail: function (res) {
-        console.log("fail", res)
-      }
-    })
+  onLoad: function (options) {
+
   },
 
   /**
@@ -38,7 +25,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  async onShow() {
+  onShow: function () {
 
   },
 
@@ -67,6 +54,13 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
 
   }
 })

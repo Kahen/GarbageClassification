@@ -1,6 +1,15 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/search/index",
+    "pages/recycle/index",
+    "pages/hazardous/index",
+    "pages/wet/index",
+    "pages/dry/index",
+    "pages/large/index",
+    "pages/topic/index",
+    "pages/formula/index",
+    "pages/all/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

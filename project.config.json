@@ -2,7 +2,7 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
@@ -63,6 +63,14 @@
 					"id": -1,
 					"name": "pages/recycle/index",
 					"pathName": "pages/recycle/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dry/index",
+					"pathName": "pages/dry/index",
+					"query": "",
 					"scene": null
 				}
 			]

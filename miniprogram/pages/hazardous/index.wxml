@@ -1,2 +1,22 @@
-<!--pages/hazardous/index.wxml-->
-<text>pages/hazardous/index.wxml</text>
+<view class="main">
+	<view class="main_header">
+  <view class="inner">
+		<view class="logo"><image src="cloud://kahen-j254z.6b61-kahen-j254z-1302334735/hazardous/有害垃圾-middle.png" mode="widthFix"></image>
+		</view><text>{{result.description}}</text></view>
+	</view>
+	<view class="index_cate">
+		<navigator wx:for="{{result.navi}}" wx:key="item">
+			<image src="{{item.img_src}}" mode="widthFix"></image>
+			<text>{{item.name}}</text>
+		</navigator>
+	</view>
+	<view class="end">
+		<text class="title">{{result.Needed}}</text>
+		<view wx:for="{{result.requirements}}" wx:key="item">
+			<text>⚪{{item}}</text>
+		</view>
+	</view>
+  <navigator class="redirect"><button type="default" hover-class="button-hover" style='width:90%;margin-bottom:20px; background-color:#fc0;color:black'>
+       查看详细分类
+    </button></navigator>
+</view>

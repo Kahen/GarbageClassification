@@ -1,4 +1,5 @@
 // pages/dry/index.js
+const db=wx.cloud.database()
 Page({
 
   /**
@@ -12,7 +13,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this
+    db.collection("Dry").get({
+      success: function (res) {
+        console.log("success", res)
+        that.setData({
+          result: res.data[0],
+        })
+        //动态显示标题
+        wx.setNavigationBarTitle({
+          title: res.data[0].name
+        })
+      },
+      fail: function (res) {
+        console.log("fail", res)
+      }
+    })
   },
 
   /**

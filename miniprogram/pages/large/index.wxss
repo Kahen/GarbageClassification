@@ -1,1 +1,45 @@
-/* pages/large/index.wxss */
+.main {
+  padding: 10rpx;
+}
+
+.main_header {
+  width: 100%;
+  background-color: #eae7c8;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 100%;
+  margin: 10rpx;
+  display: flex;
+  border-style: solid;
+  border-color: rgb(190, 188, 188);
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+}
+
+.inner image {
+  width: 100%;
+}
+
+.inner text {
+  width: 70%;
+  color: black;
+}
+
+.title {
+  padding: 30rpx 0rpx 30rpx 20rpx;
+  font-size: large;
+  font-weight: bolder;
+}
+.end{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.redirect{
+  padding-top: 30rpx;
+}

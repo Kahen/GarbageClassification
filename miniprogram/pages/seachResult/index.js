@@ -6,7 +6,7 @@ Page({
     list: [],
     limit: 20 //每次拉取数量
     ,
-    hope:''
+    key:''
   },
 
   // 搜索页面跳回
@@ -14,17 +14,17 @@ Page({
     if (options && options.searchValue){
       this.setData({
         searchValue: "搜索："+options.searchValue,
-        hope:options.searchValue
+        key:options.searchValue
       });
-      this.getData(this.data.hope)
+      this.getData(this.data.key)
     }
     
   },
-getData(kao){
+getData(key){
   db.collection("Garbage")
   .where({	 	//collectionName 表示欲模糊查询数据所在collection的名
     name:{								//columnName表示欲模糊查询数据所在列的名
-      $regex:'.*' + kao + '.*',		//queryContent表示欲查询的内容，‘.*’等同于SQL中的‘%’
+      $regex:'.*' + key + '.*',		//queryContent表示欲查询的内容，‘.*’等同于SQL中的‘%’
       $options: '1'							//$options:'1' 代表这个like的条件不区分大小写
     }
   })
@@ -45,7 +45,6 @@ getData(kao){
     })
   },
   onReachBottom: function() {
-    !this.data.isEndOfList && this.getData(this.data.hope)
-    console.log(this.data.hope)
+    !this.data.isEndOfList && this.getData(this.data.key)
   }
 })

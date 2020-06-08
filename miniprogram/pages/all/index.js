@@ -2,7 +2,7 @@ const db = wx.cloud.database()
 const _ = db.command
 const col = "Garbage"
 const sql = {
-  _id: _.neq(1)
+   //category:16
 } //获取所有记录
 
 Page({

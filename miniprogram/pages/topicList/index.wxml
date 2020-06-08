@@ -1,6 +1,6 @@
 <view class="main">
 	<view class="navi">
-		<navigator class="menu-warp" wx:for="{{result[id].about}}" wx:key="item">
+		<navigator class="menu-warp" wx:for="{{result[id].about}}" wx:key="item" url="../details/index?name={{item.name}}&&class={{item.class}}&&category={{item.category}}">
 			<view class="left"><text>{{item.name}}</text></view>
 			<view class="right"><text>{{item.class}}</text></view>
 		</navigator>

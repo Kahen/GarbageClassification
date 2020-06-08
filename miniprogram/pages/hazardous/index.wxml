@@ -5,7 +5,7 @@
 		</view><text>{{result.description}}</text></view>
 	</view>
 	<view class="index_cate">
-		<navigator wx:for="{{result.navi}}" wx:key="item">
+		<navigator wx:for="{{result.navi}}" wx:key="item" url="../details/index?name={{item.name}}&&class={{item.class}}&&category={{result.category}}">
 			<image src="{{item.img_src}}" mode="widthFix"></image>
 			<text>{{item.name}}</text>
 		</navigator>
@@ -16,7 +16,7 @@
 			<text>⚪{{item}}</text>
 		</view>
 	</view>
-  <navigator class="redirect"><button type="default" hover-class="button-hover" style='width:90%;margin-bottom:20px; background-color:#fc0;color:black'>
+  <navigator class="redirect" url="../all/index"><button type="default" hover-class="button-hover" style='width:90%;margin-bottom:20px; background-color:#fc0;color:black'>
        查看详细分类
     </button></navigator>
 </view>

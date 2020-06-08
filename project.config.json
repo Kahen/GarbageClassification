@@ -51,7 +51,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -98,6 +98,14 @@
 					"id": -1,
 					"name": "pages/all/index",
 					"pathName": "pages/all/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/index",
+					"pathName": "pages/search/index",
+					"query": "name=\"巧克力\"&class= \"湿垃圾\"&category: \"4\"",
 					"scene": null
 				}
 			]

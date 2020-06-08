@@ -1,2 +1,1 @@
-<!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<include src="../../wxSearchView/wxSearchView.wxml" />

@@ -1,0 +1,30 @@
+/* pages/details/index.wxss */
+.header {
+  align-items: center;
+  text-align: center;
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+
+.logo {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo image {
+  width: 200rpx;
+  align-self: center;
+}
+
+.title {
+  padding: 30rpx 0rpx 30rpx 20rpx;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.end {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}

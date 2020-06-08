@@ -12,7 +12,7 @@
 		<text>⚪{{item}}</text>
 	</view>
 </view>
-<navigator class="redirect"><button type="default" hover-class="button-hover" style='width:90%;margin-bottom:20px; background-color:#fc0;color:black'>
+<navigator class="redirect" url="../all/index"><button type="default" hover-class="button-hover" style='width:90%;margin-bottom:20px; background-color:#fc0;color:black'>
 		查看详细分类
 	</button></navigator>
 </view>

@@ -1,0 +1,10 @@
+<view class="header"><text>属于</text></view>
+<view class="logo">
+	<image src="{{img}}" mode="widthFix"></image>
+</view>
+	<view class="end">
+		<text class="title">{{Needed}}</text>
+		<view wx:for="{{requirements}}" wx:key="item">
+			<text>⚪{{item}}</text>
+		</view>
+	</view>

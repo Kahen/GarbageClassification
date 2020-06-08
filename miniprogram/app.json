@@ -9,12 +9,13 @@
     "pages/large/index",
     "pages/topic/index",
     "pages/formula/index",
-    "pages/all/index"
+    "pages/all/index",
+    "pages/topicList/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "垃圾分类大全",
     "navigationBarTextStyle": "black"
   },

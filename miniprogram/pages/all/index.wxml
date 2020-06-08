@@ -1,2 +1,10 @@
-<!--pages/all/index.wxml-->
-<text>pages/all/index.wxml</text>
+<view class="navi">
+	<navigator class="menu-warp" style="height:100px" wx:for='{{list}}' wx:key='item'>
+		<view class="left"><text>{{item.name}}</text></view>
+		<view class="right"><text>{{item.class}}</text></view>
+	</navigator>
+	<view style="padding:15px;text-align:center;color:grey" wx:if='{{list.length>limit}}'>
+		<view wx:if='{{(!isEndOfList)}}'>正在加载数据...</view>
+		<view wx:else>----END----</view>
+	</view>
+</view>

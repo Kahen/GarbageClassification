@@ -26,7 +26,7 @@
 	},
 	"appid": "wx1880ede32f01eabf",
 	"projectname": "GarbageClassification",
-	"libVersion": "2.8.1",
+	"libVersion": "2.11.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
@@ -71,6 +71,33 @@
 					"name": "pages/dry/index",
 					"pathName": "pages/dry/index",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/topic/index",
+					"pathName": "pages/topic/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/topicList/index",
+					"pathName": "pages/topicList/index",
+					"query": "id=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/formula/index",
+					"pathName": "pages/formula/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/all/index",
+					"pathName": "pages/all/index",
 					"scene": null
 				}
 			]

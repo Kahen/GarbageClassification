@@ -1,2 +1,8 @@
-<!--pages/topic/index.wxml-->
-<text>pages/topic/index.wxml</text>
+<view class="main">
+	<view class="menu-warp" wx:for="{{result.topic}}" wx:key="item">
+		<navigator url="../topicList/index?id={{item.id}}">
+			{{item.name}}
+			<image class="next" src='../../images/next.png'></image>
+		</navigator>
+	</view>
+</view>

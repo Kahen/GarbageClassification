@@ -1,1 +1,33 @@
 /* pages/formula/index.wxss */
+.header{
+  width: 100%;
+}
+.header image{
+  width: 100%;
+}
+.body{
+  justify-content: center;
+  text-align: center;
+}
+.title{
+  font-size: small;
+  color: #787878;
+  padding: 20rpx;
+}
+.recycle{
+  font-weight: bold;
+  color: #5084f4;
+}
+.hazardous{
+  font-weight: bold;
+  color: #e63022;
+}
+.wet{
+  font-weight: bold;
+  color: #664236;
+}
+.dry{
+  padding: 20rpx;
+  font-weight: bold;
+  color: #2d2c28;
+}

@@ -1,1 +1,24 @@
-/* pages/topic/index.wxss */
+.main{
+  margin-top: 10rpx;
+}
+.menu-warp {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+  margin: 10rpx 30rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  padding: 30rpx 40rpx;
+  position: relative;
+}
+
+.menu-warp .next {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: top;
+  position: absolute;
+  right: 40rpx;
+  top: 30rpx;
+}

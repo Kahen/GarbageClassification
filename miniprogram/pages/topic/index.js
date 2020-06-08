@@ -1,18 +1,34 @@
 // pages/topic/index.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this
+    db.collection("Topic").get({
+      success: function (res) {
+        console.log("success", res)
+        that.setData({
+          result:res.data[0]
+        })
+        //动态显示标题
+        wx.setNavigationBarTitle({
+          title: "垃圾专题"
+        })
+      },
+      fail: function (res) {
+        console.log("fail", res)
+      }
+    })
   },
 
   /**

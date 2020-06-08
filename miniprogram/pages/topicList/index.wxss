@@ -8,16 +8,16 @@
   background: rgba(255, 255, 255, 0.95);
   margin-top: 2rpx;
   font-size: 40rpx;
-  line-height: 60rpx;
+  line-height: 120rpx;
   position: relative;
   display: flex;
   justify-items: center;
-  align-items: center;
 }
 
 .menu-warp .left {
   text-align: left;
   font-weight: bold;
+
   width: 50%;
   padding-left: 20rpx;
 }
@@ -31,4 +31,24 @@
 .menu-warp .right text {
   width: 100%;
   text-align: center;
+}
+.tips{
+  justify-items: center;
+  margin-top: 10rpx;
+  background-color: white;
+  padding: 20rpx;
+}
+.tips .header{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #ff9300;
+}
+.tips .content{
+  padding: 15rpx;
+  font-size: 30rpx;
+  color: #75685b;
+}
+.tips image{
+  height: 50rpx;
+  width: 50rpx;
 }

@@ -1,28 +1,33 @@
-// pages/formula/index.js
+// pages/topicList/index.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "recycle": {
-      "title": "可回收物记材质",
-      "content": "玻,金,塑,纸,衣"
-    },
-    "hazardous": {
-      "title": "有害垃圾记口诀",
-      "content": "药(要)漆(吃)电灯"
-    },
-    "wet": { "title": "湿垃圾记原则", "content": "易腐烂,易粉碎" },
-    "dry": "其余全是干垃圾!"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: "分类口诀"
+    let that = this
+    db.collection("Topic").get({
+      success: function (res) {
+        console.log("success", res)
+        that.setData({
+          result: res.data[0].topic,
+          id :options.id
+        })
+        //动态显示标题
+        wx.setNavigationBarTitle({
+          title: res.data[id].name
+        })
+      },
+      fail: function (res) {
+        console.log("fail", res)
+      }
     })
   },
 

@@ -1,0 +1,12 @@
+<view class="main">
+	<view class="navi">
+		<navigator class="menu-warp" wx:for="{{result[id].about}}" wx:key="item">
+			<view class="left"><text>{{item.name}}</text></view>
+			<view class="right"><text>{{item.class}}</text></view>
+		</navigator>
+	</view>
+	<view class="tips">
+		<image src="../../images/tips.png"></image><text class="header"> 投放提示</text>
+		<view class="content">{{result[id].tips}}</view>
+	</view>
+</view>

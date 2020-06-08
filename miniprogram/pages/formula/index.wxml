@@ -1,2 +1,12 @@
-<!--pages/formula/index.wxml-->
-<text>pages/formula/index.wxml</text>
+<view class="header">
+	<image src="../../images/15619428912664670.png" mode="widthFix"></image>
+</view>
+<view class="body">
+	<view class="title"><text>{{recycle.title}}</text></view>
+	<view class="recycle"><text>{{recycle.content}}</text></view>
+	<view class="title"><text>{{hazardous.title}}</text></view>
+	<view class="hazardous"><text>{{hazardous.content}}</text></view>
+	<view class="title"><text>{{wet.title}}</text></view>
+	<view class="wet"><text>{{wet.content}}</text></view>
+	<view class="dry"><text>{{dry}}</text></view>
+</view>

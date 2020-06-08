@@ -1,66 +1,37 @@
-// pages/all/index.js
+const db = wx.cloud.database()
+const _ = db.command
+const col = "Garbage"
+const sql = {
+  _id: _.neq(1)
+} //获取所有记录
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    isEndOfList: false,
+    list: [],
+    limit: 20 //每次拉取数量
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function(options) {
+    this.getData()
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getData: function() {
+    db.collection(col)
+      .where(sql)
+      .skip(this.data.list.length)
+      .limit(this.data.limit)
+      .get()
+      .then(res => {
+        this.setData({
+          list: [...this.data.list, ...res.data], //合并数据
+          isEndOfList: res.data.length < this.data.limit ? true : false //判断是否结束
+        })
+      })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onReachBottom: function() {
+    !this.data.isEndOfList && this.getData()
   }
 })

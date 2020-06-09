@@ -17,4 +17,4 @@
 
 ## 小程序预览二维码
 
-![小程序码.jpg](http://yanxuan.nosdn.127.net/677e58bfc15a82ea27717d3b6a481e7b.jpg)
+![小程序码.jpg](https://github.com/Kahen/GarbageClassification/raw/master/小程序码.jpg)

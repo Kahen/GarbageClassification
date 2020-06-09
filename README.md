@@ -17,4 +17,4 @@
 
 ## 小程序预览二维码
 
-![小程序码.jpg](https://github.com/Kahen/GarbageClassification/raw/master/小程序码.jpg)
+![image](https://github.com/Kahen/GarbageClassification/raw/master/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81.jpg)

@@ -107,6 +107,12 @@
 					"pathName": "pages/search/index",
 					"query": "name=\"巧克力\"&class= \"湿垃圾\"&category: \"4\"",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/index",
+					"pathName": "pages/search/index",
+					"scene": null
 				}
 			]
 		}

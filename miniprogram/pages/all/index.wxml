@@ -1,5 +1,16 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索入口" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+<view class="head-menu">
+<view class="menu-item" wx:for="{{menu}}" wx:key="index" data-index="{{index}}" bindtap="SwitchCategory" data-index="{{item.category}}">{{item.name}}</view>
+</view>
 <view class="navi">
-	<navigator class="menu-warp" style="height:100px" wx:for='{{list}}' wx:key='item' url="../details/index?name={{item.name}}&&class={{item.class}}&&category={{item.category}}">
+	<navigator class="menu-warp" wx:for='{{list}}' wx:key='item' url="../details/index?name={{item.name}}&&class={{item.class}}&&category={{item.category}}">
 		<view class="left"><text>{{item.name}}</text></view>
 		<view class="right"><text>{{item.class}}</text></view>
 	</navigator>

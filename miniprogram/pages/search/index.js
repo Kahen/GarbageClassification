@@ -1,4 +1,5 @@
 var WxSearch = require('../../wxSearchView/wxSearchView.js');
+var list=require('../search/data');//搜索词库
 const db=wx.cloud.database()
 Page({
   data: {},
@@ -7,7 +8,7 @@ Page({
   onLoad: function (options) {
     db.collection("Garbage").where({	 	//collectionName 表示欲模糊查询数据所在collection的名
       name:{								//columnName表示欲模糊查询数据所在列的名
-        $regex:'.*' + "4" + '.*',		//queryContent表示欲查询的内容，‘.*’等同于SQL中的‘%’
+        $regex:'.*' + "" + '.*',		//queryContent表示欲查询的内容，‘.*’等同于SQL中的‘%’
         $options: '1'							//$options:'1' 代表这个like的条件不区分大小写
       }
     }).get(
@@ -24,8 +25,8 @@ Page({
     var that = this;
     WxSearch.init(
       that,  // 本页面一个引用
-      ['塑料', '奶茶', "渣男", "狗", '避', '湿巾','打火机','酸奶'], // 热点搜索推荐，[]表示不使用
-      [],// 搜索匹配，[]表示不使用
+      ['塑料', '奶茶', "渣男", "狗", '电池', '湿巾','打火机','酸奶'], // 热点搜索推荐，[]表示不使用
+      list.List,// 搜索匹配，[]表示不使用
       that.mySearchFunction, // 提供一个搜索回调函数
       that.myGobackFunction //提供一个返回回调函数
     );
@@ -48,7 +49,7 @@ Page({
   },
 
   // 返回回调函数
-  myGobackFunction: function (value) {
+  myGobackFunction: function () {
     // do your job here
     // 跳转
     wx.redirectTo({

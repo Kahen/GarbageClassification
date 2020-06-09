@@ -4,8 +4,7 @@ Page({
     searchValue:'',
     isEndOfList: false,
     list: [],
-    limit: 20 //每次拉取数量
-    ,
+    limit: 20, //每次拉取数量
     key:''
   },
 
